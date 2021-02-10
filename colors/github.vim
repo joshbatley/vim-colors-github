@@ -482,3 +482,4 @@ if has("spell")
   call s:Col('SpellRare', 'purple')
   call s:Attr('SpellRare', 'undercurl')
   call s:Spell('SpellRare', 'purple')
+endif
