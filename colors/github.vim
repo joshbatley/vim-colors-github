@@ -30,8 +30,6 @@ endif
 
 let colors_name = "github"
 
-let s:is_dark=(&background == 'dark')
-
 " Helper functions
 " from vim-gotham
 
@@ -244,8 +242,6 @@ call s:Col('PmenuSel',   'overlay',  'blue') | call s:Attr('PmenuSel', 'bold')
 call s:Col('PmenuSbar',  '',      'grey2')
 call s:Col('PmenuThumb', '',      'grey0')
 
-
-" hit enter to continue
 call s:Col('Question', 'green')
 
 call s:Col('TabLine',     'base1', 'grey1') | call s:Attr('TabLine', 'none')
@@ -281,6 +277,7 @@ call s:Col('Structure', 'red')
 " Particular Languages
 
 hi link cDefine Define
+highlight clear SignColumn
 
 " html
 " xml doesn't recognise xmlEndTag->xmlTagName, so colour it all green
@@ -485,4 +482,3 @@ if has("spell")
   call s:Col('SpellRare', 'purple')
   call s:Attr('SpellRare', 'undercurl')
   call s:Spell('SpellRare', 'purple')
-endif
