@@ -459,7 +459,7 @@ call s:Attr('CocErrorSign', 'bold')
 call s:Col('CocErrorHighlight', '', 'lightred')
 call s:Attr('CocErrorHighlight', 'underline')
 
-call s:Col('CocWarningHighlight', '', 'lightorange')
+call s:Col('CocWarningHighlight', '', '')
 call s:Attr('CocWarningHighlight', 'underline')
 call s:Col('CocWarningSign', 'orange', 'gutter')
 
